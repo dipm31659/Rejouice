@@ -71,7 +71,14 @@ function cursorAnimation() {
   },"7")
 }
 cursorAnimation();
-
+function page1Animation() {
+  tl.from(".page1 .headline span", {
+    y: 200,
+    opacity: 0,
+    stagger: .2,
+  })
+}
+page1Animation();
 function page2Animation() {
   tl.from(".page2 .navbar2", {
     opacity: 0,
