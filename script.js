@@ -37,9 +37,6 @@ function loaderAnimation() {
     scale: 0,
     duration: 2,
   },"7")
-  tl.to(".loader", {
-    display: "none",
-  }
 }
 loaderAnimation();
 
