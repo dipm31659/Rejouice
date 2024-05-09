@@ -118,7 +118,7 @@ function page2Animation() {
       scrub: 2,
     }
   })
-  tl.from(".page2 .information .para:nth-child(1), .page2 .information .para:nth-child(3)", {
+  tl.from(".page2 .information .para:nth-child(1), .page2 .information .para:nth-child(3), .page2 .information .para:nth-child(5)", {
     x: "-300%",
     opacity: 0,
     stagger: .2,
@@ -134,7 +134,7 @@ function page2Animation() {
       scrub: 2,
     }
   }, "2")
-  tl.from(".page2 .information .para:nth-child(2), .page2 .information .para:nth-child(4)", {
+  tl.from(".page2 .information .para:nth-child(2), .page2 .information .para:nth-child(4), .page2 .information .para:nth-child(6)", {
     x: "300%",
     opacity: 0,
     stagger: .2,
