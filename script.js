@@ -6,16 +6,19 @@ function loaderAnimation() {
     x: "-200",
     opacity: 0,
     duration: 1,
+    delay: -0.5,
   }, "3")
   tl.from(".loader h3:nth-child(2)", {
     y: "200",
     opacity: 0,
     duration: 1,
+    delay: -0.5,
   }, "3")
   tl.from(".loader h3:nth-child(3)", {
     x: "200",
     opacity: 0,
     duration: 1,
+    delay: -0.5,
   }, "3")
   tl.to(".loader h3:nth-child(1)", {
     opacity: 0,
@@ -37,6 +40,13 @@ function loaderAnimation() {
     scale: 0,
     duration: 2,
   },"7")
+  tl.from(".page1 video", {
+    scale: 0.2,
+    duration: 2,
+  },"7")
+  tl.to(".loader", {
+    display: "none",
+  })
 }
 loaderAnimation();
 
@@ -62,20 +72,20 @@ function cursorAnimation() {
       opacity: 0,
     })
   })
-  tl.from(".page1 video", {
-    scale: 0.2,
-    duration: 2,
-  },"7")
+  
 }
 cursorAnimation();
+
 function page1Animation() {
-  tl.from(".page1 .headline span", {
+  tl.from(".page1 .headline h1", {
     y: 200,
     opacity: 0,
-    stagger: .2,
+    stagger: .1,
+    duration: .6,
   })
 }
 page1Animation();
+
 function page2Animation() {
   tl.from(".page2 .navbar2", {
     opacity: 0,
