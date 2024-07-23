@@ -167,22 +167,22 @@ function swiperJsAnimation() {
 swiperJsAnimation();
 
 function colonAnimation() {
-  gsap.from("#colon1", {
+  gsap.from(".part6 .colon1", {
     y:-70,
     x:-70,
     scrollTrigger: {
-      trigger: "#colon1",
+      trigger: ".colon1",
       scroller: "body",
       start:"top 52%",
       end: "top 42%",
       scrub: 3,
     }
   })
-  gsap.from("#colon2", {
+  gsap.from(".part6 .colon2", {
     y:70,
     x:70,
     scrollTrigger: {
-      trigger: "#colon1",
+      trigger: ".colon1",
       scroller: "body",
       start:"top 52%",
       end: "top 42%",
